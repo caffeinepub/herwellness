@@ -1,0 +1,182 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 7,
+  "summary": "Build a beautiful website for Herwellness that provides personalized female wellness information and offers free digital wellness kits plus wellness challenge programs for women.",
+  "architectural_notes": [
+    "Surface Herwellness Instagram link in the header navigation (in addition to the footer)."
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-create-a-cohesive-beautiful-herwellness-marketing-website-with-a-consistent-visual-theme-color-palette-typography-spacing-and-component-styling-suitable-for-a-women-s-wellness-brand-applied-across-all-pages-and-ui-states",
+      "title": "Create a cohesive, beautiful Herwellness marketing website with a consistent visual theme (color palette, typography, spacing, and component styling) suitable for a women’s wellness brand, applied across all pages and UI states.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-public-marketing-pages-and-navigation-for-herwellness-including-home-value-proposition-primary-calls-to-action-personalized-wellness-entry-point-to-personalization-flow-wellness-kits-browse-kits-challenges-browse-programs-and-about-faq",
+      "title": "Implement public marketing pages and navigation for Herwellness including: Home (value proposition + primary calls to action), Personalized Wellness (entry point to personalization flow), Wellness Kits (browse kits), Challenges (browse programs), and About/FAQ.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-personalization-flow-that-collects-user-wellness-preferences-via-an-on-site-questionnaire-e-g-goals-age-range-activity-level-focus-areas-and-then-displays-a-personalized-wellness-information-summary-recommendations-page-based-on-the-responses",
+      "title": "Add a personalization flow that collects user wellness preferences via an on-site questionnaire (e.g., goals, age range, activity level, focus areas) and then displays a personalized wellness information summary/recommendations page based on the responses.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-support-internet-identity-sign-in-to-enable-saving-and-retrieving-a-user-s-personalization-profile-and-their-challenge-participation-status",
+      "title": "Support Internet Identity sign-in to enable saving and retrieving a user’s personalization profile and their challenge participation status.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-wellness-kits-section-that-lets-users-browse-a-list-of-free-digital-wellness-kits-view-kit-details-and-download-kit-assets",
+      "title": "Create a Wellness Kits section that lets users browse a list of free digital wellness kits, view kit details, and download kit assets.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-wellness-challenges-section-that-lets-users-discover-challenge-programs-view-program-details-duration-daily-weekly-tasks-and-join-leave-a-challenge-when-joined-show-a-simple-progress-ui-e-g-checklist-of-days-tasks-and-allow-marking-tasks-as-complete",
+      "title": "Create a Wellness Challenges section that lets users discover challenge programs, view program details (duration, daily/weekly tasks), and join/leave a challenge; when joined, show a simple progress UI (e.g., checklist of days/tasks) and allow marking tasks as complete.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-basic-content-management-friendly-structure-so-wellness-kits-and-challenges-can-be-updated-in-code-in-a-single-place-e-g-a-seed-list-in-the-backend-or-a-frontend-constants-file-without-touching-multiple-screens",
+      "title": "Add basic content-management-friendly structure so wellness kits and challenges can be updated in code in a single place (e.g., a seed list in the backend or a frontend constants file) without touching multiple screens.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-standard-product-quality-ux-details-loading-states-empty-states-and-error-states-for-personalization-submission-kits-list-detail-challenges-list-detail-and-join-progress-actions",
+      "title": "Add standard product-quality UX details: loading states, empty states, and error states for personalization submission, kits list/detail, challenges list/detail, and join/progress actions.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-generated-static-brand-imagery-and-integrate-it-into-the-ui-logo-hero-visual-and-a-small-set-of-kit-challenge-cover-images-stored-under-frontend-public-assets-generated-and-referenced-directly-by-the-frontend",
+      "title": "Add generated static brand imagery and integrate it into the UI (logo, hero visual, and a small set of kit/challenge cover images) stored under frontend/public/assets/generated and referenced directly by the frontend.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-configurable-instagram-handle-link-for-herwellness-and-surface-it-in-the-site-ui-at-minimum-in-the-footer-optionally-also-in-the-header-menu-as-a-clickable-link-that-opens-instagram-in-a-new-tab",
+      "title": "Add a configurable Instagram handle/link for Herwellness and surface it in the site UI (at minimum in the footer; optionally also in the header/menu) as a clickable link that opens Instagram in a new tab.",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-new-free-pdfs-resources-section-that-lists-multiple-pdf-resources-and-allows-users-to-download-them-from-the-website",
+      "title": "Create a new \"Free PDFs\" resources section that lists multiple PDF resources and allows users to download them from the website.",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-navigation-entry-points-to-the-new-free-pdfs-page-so-users-can-discover-it-from-the-marketing-site",
+      "title": "Add navigation entry points to the new Free PDFs page so users can discover it from the marketing site.",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-static-pdf-files-for-the-free-pdfs-section-to-the-frontend-public-assets-and-reference-them-from-the-free-pdfs-content-list-via-stable-paths",
+      "title": "Add static PDF files for the Free PDFs section to the frontend public assets and reference them from the Free PDFs content list via stable paths.",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-visible-instagram-link-to-the-siteheader-desktop-header-navigation-and-mobile-menu-that-uses-the-configured-instagram-url-and-opens-in-a-new-tab",
+      "title": "Add a visible Instagram link to the SiteHeader (desktop header navigation and mobile menu) that uses the configured Instagram URL and opens in a new tab.",
+      "reqIds": [
+        "REQ-15"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-site-configuration-so-the-canonical-instagram-url-is-set-to-https-www-instagram-com-herwellness-2026-and-the-header-footer-use-this-configuration-value",
+      "title": "Update the site configuration so the canonical Instagram URL is set to https://www.instagram.com/herwellness_2026/ and the header/footer use this configuration value.",
+      "reqIds": [
+        "REQ-16"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create a beautiful marketing website for Herwellness",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Provide personalized female wellness information on the website",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Offer free digital wellness kits for women (browse/access/download)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Offer wellness challenge programs for women (discover/join/participate)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-11",
+      "summary": "Implement a single Motoko backend actor to store and retrieve: user profiles (principal), saved personalization responses/results, available wellness kits metadata, available challenge programs metadata, and per-user challenge participation/progress.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-12",
+      "summary": "Add Herwellness Instagram handle/link to the website (e.g., header/footer/contact section)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-13",
+      "summary": "Add a section to upload/list and allow users to download free PDF resources (free PDFs)",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Herwellness",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

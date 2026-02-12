@@ -1,0 +1,60 @@
+{
+  "kind": "build_request",
+  "title": "Add Instagram link to the site header",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-15",
+      "text": "Add a visible Instagram link to the SiteHeader (desktop header navigation and mobile menu) that uses the configured Instagram URL and opens in a new tab.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-9"
+        ],
+        "quotes": [
+          "add it to header"
+        ]
+      },
+      "acceptanceCriteria": [
+        "On desktop widths, the header displays an \"Instagram\" link in the primary navigation area.",
+        "On mobile widths, the mobile menu includes an \"Instagram\" link.",
+        "Clicking the Instagram link opens https://www.instagram.com/herwellness_2026/ in a new tab/window.",
+        "External link uses rel=\"noopener noreferrer\" for security.",
+        "No existing header navigation items (Home, Personalized Wellness, Wellness Kits, Challenges, Free PDFs, About) are removed or broken."
+      ]
+    },
+    {
+      "id": "REQ-16",
+      "text": "Update the site configuration so the canonical Instagram URL is set to https://www.instagram.com/herwellness_2026/ and the header/footer use this configuration value.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-7",
+          "msg-9"
+        ],
+        "quotes": [
+          "add instagram page link https://www.instagram.com/herwellness_2026/",
+          "add it to header"
+        ]
+      },
+      "acceptanceCriteria": [
+        "SITE_CONFIG.instagram.url equals exactly \"https://www.instagram.com/herwellness_2026/\".",
+        "The footer Instagram link continues to work and points to https://www.instagram.com/herwellness_2026/.",
+        "The header Instagram link uses the same SITE_CONFIG.instagram.url value (no hardcoded duplicate URL)."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not modify any files under frontend/src/components/ui (Shadcn UI components are read-only).",
+    "Do not edit immutable hook files listed in SYSTEM_CONTEXT.frontend.immutablePaths."
+  ],
+  "nonGoals": [
+    "Do not add or change any backend (Motoko) APIs or data models.",
+    "Do not change the Free PDFs content list or PDF asset files as part of this update.",
+    "Do not introduce third-party authentication or social API integrations beyond a simple external link."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

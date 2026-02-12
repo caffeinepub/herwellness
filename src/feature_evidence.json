@@ -1,0 +1,41 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-add-a-visible-instagram-link-to-the-siteheader-desktop-header-navigation-and-mobile-menu-that-uses-the-configured-instagram-url-and-opens-in-a-new-tab",
+      "featureTitle": "Add a visible Instagram link to the SiteHeader (desktop header navigation and mobile menu) that uses the configured Instagram URL and opens in a new tab.",
+      "files": [
+        "frontend/src/components/layout/SiteHeader.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-15"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-update-the-site-configuration-so-the-canonical-instagram-url-is-set-to-https-www-instagram-com-herwellness-2026-and-the-header-footer-use-this-configuration-value",
+      "featureTitle": "Update the site configuration so the canonical Instagram URL is set to https://www.instagram.com/herwellness_2026/ and the header/footer use this configuration value.",
+      "files": [
+        "frontend/src/lib/content/siteConfig.ts"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-16"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

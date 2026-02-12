@@ -1,0 +1,46 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Add configurable Instagram link to header navigation",
+  "requirements": [
+    {
+      "id": "REQ-15",
+      "summary": "Add a visible Instagram external link to the SiteHeader for both desktop navigation and the mobile menu, using the configured Instagram URL and opening in a new tab.",
+      "acceptanceCriteria": [
+        "On desktop widths, the header displays an \"Instagram\" link in the primary navigation area.",
+        "On mobile widths, the mobile menu includes an \"Instagram\" link.",
+        "Clicking the Instagram link opens https://www.instagram.com/herwellness_2026/ in a new tab/window.",
+        "External link uses rel=\"noopener noreferrer\" for security.",
+        "No existing header navigation items (Home, Personalized Wellness, Wellness Kits, Challenges, Free PDFs, About) are removed or broken."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/layout/SiteHeader.tsx",
+          "operation": "modify",
+          "description": "Import SITE_CONFIG and add an external \"Instagram\" <a> link (target=\"_blank\" with rel=\"noopener noreferrer\") to both the desktop nav area and the mobile menu, ensuring it uses SITE_CONFIG.instagram.url (no hardcoded duplicate URL) and does not alter/remove existing nav items."
+        }
+      ]
+    },
+    {
+      "id": "REQ-16",
+      "summary": "Set the canonical Instagram URL in site configuration and ensure header/footer links use the shared SITE_CONFIG value.",
+      "acceptanceCriteria": [
+        "SITE_CONFIG.instagram.url equals exactly \"https://www.instagram.com/herwellness_2026/\".",
+        "The footer Instagram link continues to work and points to https://www.instagram.com/herwellness_2026/.",
+        "The header Instagram link uses the same SITE_CONFIG.instagram.url value (no hardcoded duplicate URL)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/lib/content/siteConfig.ts",
+          "operation": "modify",
+          "description": "Update SITE_CONFIG.instagram.url to exactly \"https://www.instagram.com/herwellness_2026/\" (canonical value used across the app)."
+        },
+        {
+          "path": "frontend/src/components/layout/SiteFooter.tsx",
+          "operation": "modify",
+          "description": "Confirm the footer Instagram link continues to source its href from SITE_CONFIG.instagram.url so it automatically reflects the canonical URL after the configuration update."
+        }
+      ]
+    }
+  ]
+}

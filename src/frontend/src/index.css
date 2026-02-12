@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 1rem;
+        /* Soft rose/peach palette for wellness */
+        --background: 0.98 0.01 30;
+        --foreground: 0.25 0.02 30;
+        --card: 1 0 0;
+        --card-foreground: 0.25 0.02 30;
+        --popover: 1 0 0;
+        --popover-foreground: 0.25 0.02 30;
+        /* Warm rose primary */
+        --primary: 0.65 0.15 15;
+        --primary-foreground: 1 0 0;
+        /* Soft peach secondary */
+        --secondary: 0.92 0.04 45;
+        --secondary-foreground: 0.35 0.02 30;
+        --muted: 0.95 0.02 30;
+        --muted-foreground: 0.55 0.02 30;
+        /* Soft lavender accent */
+        --accent: 0.88 0.06 300;
+        --accent-foreground: 0.35 0.02 30;
+        --destructive: 0.577 0.245 27.325;
+        --destructive-foreground: 0.985 0 0;
+        --border: 0.90 0.02 30;
+        --input: 0.90 0.02 30;
+        --ring: 0.65 0.15 15;
+        --chart-1: 0.65 0.15 15;
+        --chart-2: 0.70 0.12 340;
+        --chart-3: 0.75 0.10 60;
+        --chart-4: 0.68 0.14 280;
+        --chart-5: 0.72 0.11 120;
+    }
+
+    .dark {
+        --background: 0.18 0.02 30;
+        --foreground: 0.95 0.01 30;
+        --card: 0.22 0.02 30;
+        --card-foreground: 0.95 0.01 30;
+        --popover: 0.22 0.02 30;
+        --popover-foreground: 0.95 0.01 30;
+        --primary: 0.70 0.15 15;
+        --primary-foreground: 0.98 0 0;
+        --secondary: 0.28 0.02 30;
+        --secondary-foreground: 0.95 0.01 30;
+        --muted: 0.28 0.02 30;
+        --muted-foreground: 0.65 0.02 30;
+        --accent: 0.35 0.04 300;
+        --accent-foreground: 0.95 0.01 30;
+        --destructive: 0.704 0.191 22.216;
+        --destructive-foreground: 0.98 0 0;
+        --border: 0.30 0.02 30;
+        --input: 0.30 0.02 30;
+        --ring: 0.70 0.15 15;
+        --chart-1: 0.70 0.15 15;
+        --chart-2: 0.75 0.12 340;
+        --chart-3: 0.80 0.10 60;
+        --chart-4: 0.73 0.14 280;
+        --chart-5: 0.77 0.11 120;
+    }
+
+    * {
+        @apply border-border;
+    }
+    body {
+        @apply bg-background text-foreground;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    }
+}
+
+@layer components {
+    .wellness-gradient {
+        background: linear-gradient(135deg, oklch(var(--primary) / 0.1) 0%, oklch(var(--accent) / 0.1) 100%);
+    }
+    
+    .hero-gradient {
+        background: linear-gradient(180deg, oklch(var(--background)) 0%, oklch(var(--secondary)) 100%);
+    }
+}

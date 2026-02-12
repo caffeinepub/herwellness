@@ -1,0 +1,26 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-12T17:28:42.974Z",
+  "summary": "REQ-15 appears implemented in SiteHeader with an Instagram external link in both desktop nav and mobile menu, using SITE_CONFIG.instagram.url and opening in a new tab with rel=\"noopener noreferrer\". REQ-16 is partially evidenced: SITE_CONFIG.instagram.url is set to the required canonical URL, and the header uses it; however, there is no diff evidence that the footer uses the same configuration value or that its Instagram link was updated/verified.",
+  "missing_requirements": [
+    {
+      "id": "REQ-16",
+      "requirement": "Ensure the footer Instagram link uses the canonical SITE_CONFIG.instagram.url value (no hardcoded duplicate URL) and points to https://www.instagram.com/herwellness_2026/.",
+      "reason": "The diff shows SITE_CONFIG updated and SiteHeader consuming SITE_CONFIG.instagram.url, but there are no changes shown for SiteFooter and no direct evidence that the footer link uses SITE_CONFIG.instagram.url or that it now points to the updated URL.",
+      "evidence": [
+        "frontend/src/lib/content/siteConfig.ts",
+        "frontend/src/components/layout/SiteHeader.tsx",
+        "frontend-file-summaries.txt (mentions SiteFooter but no code diff for it)"
+      ]
+    }
+  ],
+  "hallucinated_features": [],
+  "confidence": 0.68,
+  "changed_files": [
+    "frontend-file-summaries.txt",
+    "frontend/src/components/layout/SiteHeader.tsx",
+    "frontend/src/lib/content/siteConfig.ts",
+    "project_state.json"
+  ]
+}
